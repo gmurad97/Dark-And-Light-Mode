@@ -1,0 +1,96 @@
+:root {
+    --text-color: #000000;
+    --active-color: #FFFFFF;
+    --body-background-color: #FFFFFF;
+    --body-container-color: #FFFFFF;
+    --body-container-toggler-color: #E5E5E5;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-background-color);
+    margin: 0px auto;
+    padding: 0px;
+    font-family: "Helvetica", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--body-container-color);
+    box-shadow: 0px 0px 16px #000000;
+    border-radius: 16px;
+    min-width: 300px;
+    min-height: 400px;
+    margin-top: 32px;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img>img {
+    width: 150px;
+    height: 150px;
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+}
+
+.container-text>h1 {
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-text>p {
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.container-toggler {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-container-toggler-color);
+    box-shadow: 0px 0px 11px #000000;
+    border-radius: 32px;
+}
+
+.light-mode,
+.dark-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    font-weight: bold;
+    color: var(--text-color);
+    width: 115px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--active-color);
+}
